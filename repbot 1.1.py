@@ -79,7 +79,7 @@ async def on_command_error(ctx, error):
 
     # Handles MissingRequiredArgument error
     if isinstance(error, commands.MissingRequiredArgument):
-        # await ctx.send("You fucking idiot")
+        # await ctx.send("You fool")
         # await ctx.send(f"-# Missing argument: {error.param.name}")
         return
 
@@ -90,13 +90,13 @@ async def on_command_error(ctx, error):
     
     # Handles BadArgument error
     elif isinstance(error, commands.BadArgument):
-        # await ctx.send("You fucking idiot")
+        # await ctx.send("You fool")
         # await ctx.send(f"-# error: BadArgument")
         return
     
     # Handle any other errors that might occur
     else:
-        await ctx.send("You fucking idiot")
+        await ctx.send("You fool")
         await ctx.send(f"-# {error}")
         return
 
